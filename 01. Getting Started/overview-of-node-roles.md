@@ -9,5 +9,5 @@ GET /_cat/nodes?v
 ##### Quizz: 
 
 - Quelles colonnes sont présentes ?
-- Combien de noeuds ?
+- Combien de noeuds comptez-vous ?
 - Quelle est l'adresse IP du Noeud ?
