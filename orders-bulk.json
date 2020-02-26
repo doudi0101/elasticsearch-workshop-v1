@@ -1,4 +1,4 @@
-{"index":{"_id":1}}
+{"index":{"_id":1}} 
 {"purchased_at":"2016-07-10T16:52:43Z","lines":[{"product_id":6,"amount":71.32,"quantity":1},{"product_id":3,"amount":58.96,"quantity":3},{"product_id":1,"amount":29.8,"quantity":3}],"total_amount":160.08,"salesman":{"id":11,"name":"Matthus Mitkcov"},"sales_channel":"store","status":"processed"}
 {"index":{"_id":2}}
 {"purchased_at":"2016-03-08T16:18:37Z","lines":[{"product_id":7,"amount":31.44,"quantity":2},{"product_id":4,"amount":74.82,"quantity":2}],"total_amount":106.26,"salesman":{"id":79,"name":"Ulberto Woodruff"},"sales_channel":"store","status":"completed"}
