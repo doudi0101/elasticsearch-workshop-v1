@@ -17,9 +17,10 @@
 	- [ElasticSearch - The Definitive Guide ](https://drive.google.com/open?id=1dtJhgRiVfaTrqpDqi4MA4HRK5K2iWSr6)
 - IMPORTANT : L'ouvrage vous est fourni à titre de démo, merci de penser aux auteurs et de l'acheter légalement
 
-### Installation de Java
+### Installation de Java & wget
 ```
 sudo yum install -y java
+sudo yum install -y wget
 ```
 
 ### Installation ElasticSearch
