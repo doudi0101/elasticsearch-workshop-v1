@@ -43,8 +43,10 @@ sudo rpm -i kibana-7.6.2-x86_64.rpm
 
 #### Configuration accès distant (remplacer localhost / 127.0.0.1 par 0.0.0.0) 
 
+- Editer le fichier de conf
+```
 vi /home/ec2-user/kibana-7.0.0-linux-x86_64/config/kibana.yml
- 
+``` 
 ```
 # Kibana is served by a back end server. This setting specifies the port to use.
 server.port: 5601 <<<<<< VERIFIER CA
@@ -55,7 +57,7 @@ server.port: 5601 <<<<<< VERIFIER CA
 server.host: 0.0.0.0 <<<<<< CHANGER CA
 ```
 
-sauvegarder
+- Sauvegarder
 
 ### Démarrage Service Kibana
 ```
