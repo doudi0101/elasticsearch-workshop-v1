@@ -15,10 +15,10 @@
 - L'ouvrage vous est fourni à titre de démo, merci de penser aux auteurs et de l'acheter légalement
 
 ### Installation ElasticSearch
-'''
+```
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.6.2-x86_64.rpm
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.6.2-x86_64.rpm.sha512
 shasum -a 512 -c elasticsearch-7.6.2-x86_64.rpm.sha512 
 sudo rpm --install elasticsearch-7.6.2-x86_64.rpm
-'''
+```
 
