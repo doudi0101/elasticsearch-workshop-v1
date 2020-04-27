@@ -36,7 +36,7 @@ sudo service elasticsearch start
 ### Installation Logstash
 ```
 wget https://artifacts.elastic.co/downloads/logstash/logstash-7.6.2.rpm
-sudo rpm -i logstash/logstash-7.6.2.rpm
+sudo rpm -i logstash-7.6.2.rpm
 ```
 
 ### Installation Kibana
@@ -65,7 +65,7 @@ server.host: 0.0.0.0 <<<<<< CHANGER CA
 
 ### Démarrage Service Kibana
 ```
-sudo service elasticsearch kibana
+sudo service kibana start
 ```
 
 ### Vérification de votre accès Web
