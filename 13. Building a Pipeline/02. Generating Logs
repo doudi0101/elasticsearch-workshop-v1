@@ -1,0 +1,29 @@
+### Installer les prérequis
+
+Installer Python sur votre poste
+sudo yum install epel-release
+sudo yum install python-pip
+
+###  Récupérer l'application de génération de logs apache 
+
+sudo git clone
+https://github.com/kiritbasu/Fake-Apache-Log-Generator.git
+cd Fake-Apache-Log-Generator
+sudo pip install -r requirements.txt
+
+###  Exemple d’utilisation
+
+python apache-fake-log-gen.py -n 100 -o LOG
+
+Utiliser le programme précédent pour générer des logs toutes les secondes et envoyer la sortie vers le port TCP paramétré précédemment
+$ watch -n1 <votre-commande>
+
+### Créer un fichier pipeline logstach pour traiter ces log APACHE 
+(cloner le fichier YML précédent et l’adapter en conséquence)
+
+utiliser le filtre de formatage adapté : APACHE
+voir la doc : https://www.elastic.co/guide/en/logstash/current/config-examples.html
+
+https://github.com/kiritbasu/Fake-Apache-Log-Generator
+
+
