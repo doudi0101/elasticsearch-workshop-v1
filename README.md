@@ -49,7 +49,7 @@ sudo rpm -i kibana-7.6.2-x86_64.rpm
 
 - Editer le fichier de conf
 ```
-vi /home/ec2-user/kibana-7.0.0-linux-x86_64/config/kibana.yml
+vi /etc/kibana/kibana.yml
 ``` 
 ```
 # Kibana is served by a back end server. This setting specifies the port to use.
