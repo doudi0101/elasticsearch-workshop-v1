@@ -20,7 +20,7 @@ output {
 }
 ```
 
-- Lancer logstash : 
+- Lancer votre pipeline logstash : 
 ```
 cd usr/share/logstash/bin
 ./logstash -f /chemin/logstash-tcp.yml
