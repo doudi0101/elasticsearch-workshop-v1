@@ -14,11 +14,54 @@
 - [ElasticSearch - The Definitive Guide ](https://drive.google.com/open?id=1dtJhgRiVfaTrqpDqi4MA4HRK5K2iWSr6)
 - L'ouvrage vous est fourni à titre de démo, merci de penser aux auteurs et de l'acheter légalement
 
+### Installation de Java
+```
+sudo yum install -y java
+```
+
 ### Installation ElasticSearch
 ```
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.6.2-x86_64.rpm
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.6.2-x86_64.rpm.sha512
-shasum -a 512 -c elasticsearch-7.6.2-x86_64.rpm.sha512 
-sudo rpm --install elasticsearch-7.6.2-x86_64.rpm
+sudo rpm -i elasticsearch-7.6.2-x86_64.rpm
+```
+### Démarrage Service ElasticSearch
+```
+sudo service elasticsearch start
 ```
 
+### Installation Logstash
+```
+wget https://artifacts.elastic.co/downloads/logstash/logstash-7.6.2.rpm
+sudo rpm -i logstash/logstash-7.6.2.rpm
+```
+
+### Installation Kibana
+```
+wget https://artifacts.elastic.co/downloads/kibana/kibana-7.6.2-x86_64.rpm
+sudo rpm -i kibana-7.6.2-x86_64.rpm
+```
+
+#### Configuration accès distant (remplacer localhost / 127.0.0.1 par 0.0.0.0) 
+
+vi /home/ec2-user/kibana-7.0.0-linux-x86_64/config/kibana.yml
+ 
+```
+# Kibana is served by a back end server. This setting specifies the port to use.
+server.port: 5601 <<<<<< VERIFIER CA
+
+# Specifies the address to which the Kibana server will bind. IP addresses and host names are both valid values.
+# The default is 'localhost', which usually means remote machines will not be able to connect.
+# To allow connections from remote users, set this parameter to a non-loopback address.
+server.host: 0.0.0.0 <<<<<< CHANGER CA
+```
+
+sauvegarder
+
+### Démarrage Service Kibana
+```
+sudo service elasticsearch kibana
+```
+
+### Vérification de votre accès Web
+
+- http://votre.adresse.IP:5601
