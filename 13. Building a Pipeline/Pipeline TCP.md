@@ -1,0 +1,44 @@
+Le But de ce TP est de construire et d'assembler bout à bout une pipeline complète 
+
+- Créer un fichier logstash-tcp.yml
+
+```
+input
+{
+    tcp {
+          port => 7777
+          type => syslog
+        }
+}
+
+output {
+  elasticsearch {
+    hosts => [ "adresse-ip-locale:port-elastic-search" ]
+    index => "weblog"
+  }
+  stdout { codec => rubydebug }
+}
+```
+
+- Lancer logstash : 
+```
+cd usr/share/logstash/bin
+./logstash -f /chemin/logstash-tcp.yml
+```
+- Lancer un autre tab de terminal (split view et se connecter ) 
+
+- Ecrire des messages sur la console et les envoyer via netcat (sur le port 7777) sur le port précédemment paramétré (demander une démo au trainer)
+```
+sudo yum install nc
+sudo nc localhost 7777
+```
+
+- Vérifier la réception sur logstash (via les logs) et l’envoi à ElasticSearch 
+- Vérifier à travers la console de DEV par des requêtes sur weblog
+
+- Constater la création et le remplissage de l’index ‘weblog’
+- Monitorer en temps réel via la commande watch
+``` 
+watch -n0.5 curl -X GET "localhost:9200/webz/_count"
+```
+
