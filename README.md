@@ -69,7 +69,7 @@ sudo dpkg -i kibana-7.6.2-amd64.deb
 
 - Editer le fichier de conf
 ```
-vi /etc/kibana/kibana.yml
+sudo vi /etc/kibana/kibana.yml
 ``` 
 ```
 # Kibana is served by a back end server. This setting specifies the port to use.
