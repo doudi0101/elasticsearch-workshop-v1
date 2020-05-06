@@ -24,25 +24,45 @@ sudo yum install -y wget
 ```
 
 ### Installation ElasticSearch
+
+- Centos/RHEL
 ```
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.6.2-x86_64.rpm
 sudo rpm -i elasticsearch-7.6.2-x86_64.rpm
 ```
+- Debian
+```
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.6.2-amd64.deb 
+sudo dpkg -i elasticsearch-7.6.2-amd64.deb
+```
+
 ### Démarrage Service ElasticSearch
 ```
 sudo service elasticsearch start
 ```
 
 ### Installation Logstash
+- Centos/RHEL
 ```
 wget https://artifacts.elastic.co/downloads/logstash/logstash-7.6.2.rpm
 sudo rpm -i logstash-7.6.2.rpm
 ```
+- Debian
+```
+wget https://artifacts.elastic.co/downloads/logstash/logstash-7.6.2.deb
+sudo dpkg -i logstash-7.6.2.deb
+```
 
 ### Installation Kibana
+- Centos/RHEL
 ```
 wget https://artifacts.elastic.co/downloads/kibana/kibana-7.6.2-x86_64.rpm
 sudo rpm -i kibana-7.6.2-x86_64.rpm
+```
+- Debian
+```
+wget https://artifacts.elastic.co/downloads/kibana/kibana-7.6.2-amd64.deb
+sudo dpkg -i kibana-7.6.2-amd64.deb
 ```
 
 #### Configuration accès distant (remplacer localhost / 127.0.0.1 par 0.0.0.0) 
