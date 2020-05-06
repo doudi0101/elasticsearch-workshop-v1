@@ -1,0 +1,9 @@
+- Ajouter un Filtre sur le Type d'OS
+
+  - Créer un filtre uniquement sur les Logs provenant de MacOS
+
+  - Le sauvegarder sous le Nom LOGS-MACOS
+
+  - Créer un filtre uniquement sur les Logs provenant de Windows
+
+  - Le sauvegarder sous le Nom LOGS-MACOS
