@@ -21,6 +21,6 @@ filter {
 output {
   elasticsearch {
     hosts => [ "localhost:9200" ]
-    index => "webz"
+    index => "weblog"
   }
   stdout { codec => rubydebug }
