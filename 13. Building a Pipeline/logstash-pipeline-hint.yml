@@ -24,3 +24,6 @@ output {
     index => "weblog"
   }
   stdout { codec => rubydebug }
+}
+
+  
