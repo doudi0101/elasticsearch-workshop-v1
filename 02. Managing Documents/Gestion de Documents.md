@@ -222,7 +222,7 @@ Quelle différence remarquez-vous ?
 
 Autre question : Quelle différence entre les deux requêtes ci-dessous :
 
-<img src="https://i.ibb.co/L1KHxW5/016-1-Screenshot-from-2021-03-16-17-09-07.png" width="60%">
+<img src="https://i.ibb.co/L1KHxW5/016-1-Screenshot-from-2021-03-16-17-09-07.png" width="80%">
 
 TODO : Compléter la réponse.
 
@@ -354,7 +354,7 @@ La gestion des accès concurrents est essentiel pour éviter qu'une ancienne ver
 
 Ici un exemple de mise à jour du stock pour notifier une vente en reduisant le stock d'une unité :
 
-<img src="https://i.ibb.co/H2h3F0C/019-Screenshot-from-2021-03-16-19-00-10.png" width="50%">
+<img src="https://i.ibb.co/H2h3F0C/019-Screenshot-from-2021-03-16-19-00-10.png" width="70%">
 
 L'achat du visiteur B devrait donner un stock de 4 mais dans ce cas cela donne une incohérence sans que personne ne s'en rende compte ! Cela peut produire la vente de produits qui ne sont plus en stock.<br/>
 Nous voulons que le deuxième update plante si le document a entre temps été modifié.
@@ -362,13 +362,13 @@ Nous voulons que le deuxième update plante si le document a entre temps été m
 Pour cela il y a 2 options :
 * Utiliser le numéro de version du document lors de l'update :
 
-<img src="https://i.ibb.co/dkqjzFk/020-Screenshot-from-2021-03-16-19-02-46.png" width="50%">
+<img src="https://i.ibb.co/dkqjzFk/020-Screenshot-from-2021-03-16-19-02-46.png" width="70%">
 
 Mais cette approche a été deprécié car elle ne couvre pas tous les cas.
 
 * Utiliser le primary term et le numéro de séquence du document :
 
-<img src="https://i.ibb.co/xJy7LV4/021-Screenshot-from-2021-03-16-19-04-50.png" width="50%">
+<img src="https://i.ibb.co/xJy7LV4/021-Screenshot-from-2021-03-16-19-04-50.png" width="70%">
 
 ##### :arrow_forward: Retrouver un document et vérifier que le primary term et le sequence number sont présents
 ```
@@ -390,7 +390,7 @@ Ce que cela veut dire c'est que le document ne sera mis à jour que si les prima
 
 * En cas de succès :
 
-<img src="https://i.ibb.co/mRKfhVw/022-Screenshot-2021-03-16-Elastic-Kibana.png" width="20%">
+<img src="https://i.ibb.co/mRKfhVw/022-Screenshot-2021-03-16-Elastic-Kibana.png" width="30%">
 
 Vérifier que les primary term et sequence number ne sont plus les mêmes.
 
@@ -520,7 +520,7 @@ POST /_bulk
 Ici le nom de l'action est `index`. Il existe aussi une autre action pour indexer des documents : `create`.<br>
 La différence est que le `create` plante si un document existe déjà avec le même identifiant.
 
-<img src="https://i.ibb.co/hymTQwQ/026-Screenshot-2021-03-16-Elastic-Kibana.png" width="40%">
+<img src="https://i.ibb.co/hymTQwQ/026-Screenshot-2021-03-16-Elastic-Kibana.png" width="50%">
 
 ##### :arrow_forward: Modifier et supprimer des documents
 Le type d'opération est spécifié dans les lignes `action_and_meta_data` :
