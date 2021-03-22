@@ -29,7 +29,7 @@ PUT /products
 
 Malgré des paramètres douteux de création d'index, cela semble fonctionner :
 
-<img src="https://i.ibb.co/ngn1wH0/009-Screenshot-2021-03-16-Elastic-Kibana.png" width="40%">
+<img src="https://i.ibb.co/ngn1wH0/009-Screenshot-2021-03-16-Elastic-Kibana.png" width="30%">
 
 ##### :arrow_forward: Quizz: 
 - Que pensez-vous de la réplication dans le contexte actuel ?
