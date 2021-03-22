@@ -398,7 +398,7 @@ Vérifier que les primary term et sequence number ne sont plus les mêmes.
 
 Essayer de modifier de nouveau en gardant les anciens primary term et sequence number.
 
-<img src="https://i.ibb.co/zbMCXtR/023-Screenshot-2021-03-16-Elastic-Kibana.png" width="40%">
+<img src="https://i.ibb.co/zbMCXtR/023-Screenshot-2021-03-16-Elastic-Kibana.png" width="60%">
 
 C'est la première fois qu'on se félicitera d'avoir une erreur. ;)
 
